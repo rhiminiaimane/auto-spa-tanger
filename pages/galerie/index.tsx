@@ -10,9 +10,9 @@ const galleryItems = [
   { id: 4, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg.jpg', alt: 'Volkswagen Touareg' },
   { id: 5, model: 'Volkswagen', Name: 'Volkswagen Touareg', image: '/cars/VolkswagenTouareg2.jpg', alt: 'Volkswagen Touareg' },
 
-  { id: 6, model: 'Volkswagen', Name: 'Volkswagen Golf R', image: '/cars/GOLFR0.webp', alt: 'Volkswagen Golf R' },
-  { id: 7, model: 'Volkswagen', Name: 'Volkswagen Golf R', image: '/cars/GOLFR.webp', alt: 'Volkswagen Golf R' },
-  { id: 8, model: 'Volkswagen', Name: 'Volkswagen Golf R', image: '/cars/GOLFR3.webp', alt: 'Volkswagen Golf R' },
+  { id: 6, model: 'Volkswagen', Name: 'Volkswagen Golf 8 R', image: '/cars/GOLFR0.webp', alt: 'Volkswagen Golf R' },
+  { id: 7, model: 'Volkswagen', Name: 'Volkswagen Golf 8 R', image: '/cars/GOLFR.webp', alt: 'Volkswagen Golf R' },
+  { id: 8, model: 'Volkswagen', Name: 'Volkswagen Golf 8 R', image: '/cars/GOLFR3.webp', alt: 'Volkswagen Golf R' },
 
   { id: 9, model: 'Dacia', Name: 'Dacia StepWay', image: '/cars/dacia.webp', alt: 'Dacia StepWay' },
   { id: 10, model: 'Dacia', Name: 'Dacia StepWay', image: '/cars/dacia2.webp', alt: 'Dacia StepWay' },
@@ -26,14 +26,14 @@ const galleryItems = [
   { id: 16, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes3.webp', alt: 'Mercedes AMG GLE 63 S model' },
   { id: 17, model: 'Mercedes', Name: 'Mercedes AMG GLE 63 S model', image: '/cars/mercedes4.webp', alt: 'Mercedes AMG GLE 63 S model' },
 
-  { id: 18, model: 'BMW', Name: 'BMW M60', image: '/cars/bmw.webp', alt: 'BMW M60' },
-  { id: 19, model: 'BMW', Name: 'BMW M60', image: '/cars/bmw3.webp', alt: 'BMW M60' },
-  { id: 20, model: 'BMW', Name: 'BMW M60', image: '/cars/bmw4.webp', alt: 'BMW M60' },
+  { id: 18, model: 'BMW', Name: 'BMW I5 m60', image: '/cars/bmw.webp', alt: 'BMW M60' },
+  { id: 19, model: 'BMW', Name: 'BMW I5 m60', image: '/cars/bmw3.webp', alt: 'BMW M60' },
+  { id: 20, model: 'BMW', Name: 'BMW I5 m60', image: '/cars/bmw4.webp', alt: 'BMW M60' },
 
-  { id: 21, model: 'Mercedes', Name: 'Mercedes C63 TWIN TURBO', image: '/cars/C63TWINTURBO.jpg', alt: 'Mercedes C63 TWIN TURBO' },
-  { id: 22, model: 'Mercedes', Name: 'Mercedes C63 TWIN TURBO', image: '/cars/C63TWINTURBO2.jpg', alt: 'Mercedes C63 TWIN TURBO' },
-  { id: 23, model: 'Mercedes', Name: 'Mercedes C63 TWIN TURBO', image: '/cars/C63TWINTURBO1.jpg', alt: 'Mercedes C63 TWIN TURBO' },
-  { id: 24, model: 'Mercedes', Name: 'Mercedes C63 TWIN TURBO', image: '/cars/C63TWINTURBO3.jpg', alt: 'Mercedes C63 TWIN TURBO' },
+  { id: 21, model: 'Mercedes', Name: 'Mercedes C63 Cabriolet', image: '/cars/C63TWINTURBO.jpg', alt: 'Mercedes C63 TWIN TURBO' },
+  { id: 22, model: 'Mercedes', Name: 'Mercedes C63 Cabriolet', image: '/cars/C63TWINTURBO2.jpg', alt: 'Mercedes C63 TWIN TURBO' },
+  { id: 23, model: 'Mercedes', Name: 'Mercedes C63 Cabriolet', image: '/cars/C63TWINTURBO1.jpg', alt: 'Mercedes C63 TWIN TURBO' },
+  { id: 24, model: 'Mercedes', Name: 'Mercedes C63 Cabriolet', image: '/cars/C63TWINTURBO3.jpg', alt: 'Mercedes C63 TWIN TURBO' },
 
   // Porsche Cayenne S E-Hybrid images
   { id: 25, model: 'Porsche', Name: 'Porsche Cayenne S E-Hybrid', image: '/cars/PORSCHE_CAYENNES_E_HYBRID.jpg', alt: 'Porsche Cayenne S E-Hybrid' },
@@ -44,7 +44,7 @@ const galleryItems = [
   { id: 28, model: 'Chevrolet', Name: 'Chevrolet Camaro', image: '/cars/ChevroletCamaro2.webp', alt: 'Chevrolet Camaro' },
   { id: 29, model: 'Chevrolet', Name: 'Chevrolet Camaro', image: '/cars/ChevroletCamaro1.webp', alt: 'Chevrolet Camaro' },
 
-  { id: 30, model: 'BMW', Name: 'BMW', image: '/cars/platinum-pack.jpg', alt: 'BMW' },
+  { id: 30, model: 'BMW', Name: 'BMW 3 Series G20', image: '/cars/platinum-pack.jpg', alt: 'BMW' },
 ];
 
 const Galerie: React.FC = () => {
