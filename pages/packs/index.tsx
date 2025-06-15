@@ -1,4 +1,6 @@
 import styles from './Services.module.css';
+import Head from 'next/head';
+
 
 const packs = [
   {
@@ -93,6 +95,14 @@ const Packs: React.FC = () => {
     packs.find((p) => p.title === 'Pack Diamond')?.features || [];
 
   return (
+    <>
+    <Head>
+        <title>Nos Packs Detailing à Auto Spa Tanger | Nettoyage & Soins Auto</title>
+        <meta name="description" content="Découvrez nos packs detailing à Auto Spa Tanger : nettoyage voiture, soin cuir, polissage, cire premium. Nettoyage auto professionnel à Tanger." />
+        <meta name="keywords" content="nettoyage voiture Tanger, detailing auto Tanger, soin voiture Tanger, polissage voiture Tanger, auto spa Tanger, lavage voiture Tanger" />
+        <link rel="canonical" href="https://autospatanger.com/packs" />
+      </Head>
+    
     <div className={styles.container}>
       <h1 className={styles.title}>Nos Packs de Services</h1>
       <div className={styles.pricing}>
@@ -144,6 +154,7 @@ const Packs: React.FC = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

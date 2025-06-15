@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import styles from './index.module.css';
 import Reveal from '@/components/ScrollOnReveal/Reveal';
+import Head from 'next/head';
 
 const Services: React.FC = () => {
   const router = useRouter();
@@ -58,6 +59,13 @@ const Services: React.FC = () => {
   ];
 
   return (
+    <>
+    <Head>
+        <title>Services Auto Spa Tanger | Traitement Céramique & PPF</title>
+        <meta name="description" content="Découvrez nos services de traitement céramique, nano ceramic, film de protection peinture (PPF) et auto spa à Tanger. Protection premium pour votre véhicule." />
+        <meta name="keywords" content="traitement céramique Tanger, nano ceramic Tanger, PPF Tanger, auto spa Tanger, protection peinture Tanger" />
+        <link rel="canonical" href="https://autospatanger.com/services" />
+    </Head>
     <div className={styles.pageContainer}>
       <div className={styles.buttonGroup}>
         <button
@@ -215,6 +223,7 @@ const Services: React.FC = () => {
         </>
       )}
     </div>
+    </>
   );
 };
 

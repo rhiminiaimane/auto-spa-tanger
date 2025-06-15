@@ -1,6 +1,7 @@
 import { useState, useMemo, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 import styles from './index.module.css';
+import Head from 'next/head';
 
 const galleryItems = [
   { id: 1, model: 'Skoda', Name: 'Skoda Octavia', image: '/cars/skodaoctavia.webp', alt: 'Skoda Octavia' },
@@ -128,6 +129,13 @@ const Galerie: React.FC = () => {
   };
 
   return (
+    <>
+          <Head>
+        <title>Galerie de Réalisations | Auto Spa Detailing Tanger</title>
+        <meta name="description" content="Découvrez les réalisations d'Auto Spa Detailing Tanger : nettoyage, polissage, traitement céramique et detailing sur des BMW, Mercedes, Porsche, Audi, et bien plus." />
+        <meta name="keywords" content="detailing Tanger, traitement céramique Tanger, lavage auto Tanger, nettoyage voiture Tanger, BMW detailing Tanger, Mercedes detailing Tanger, Porsche Tanger" />
+        <link rel="canonical" href="https://autospatanger.com/galerie" />
+      </Head>
     <div className={styles.container}>
       <div className={styles.gallery}>
       <div 
@@ -139,7 +147,7 @@ const Galerie: React.FC = () => {
       >
         <Image
           src={selectedImage.image}
-          alt={selectedImage.alt}
+          alt={`Detailing ${selectedImage.Name} à Tanger`}
           width={600}
           height={400}
           className={`${styles.image} ${
@@ -185,7 +193,7 @@ const Galerie: React.FC = () => {
       </div>
     </div>
     </div>
-    
+    </>
   );
 };
 
