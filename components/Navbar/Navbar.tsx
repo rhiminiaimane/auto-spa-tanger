@@ -50,6 +50,7 @@ const Navbar: React.FC = () => {
           className={styles.logoImage} 
           width={50} 
           height={50} 
+          priority
         />
         <span className={styles.brandName}>
           <span className={styles.mainBrand}>Masters Of Detailing</span> 

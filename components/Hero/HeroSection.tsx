@@ -10,16 +10,18 @@ const HeroSection: React.FC = () => {
         loop
         muted
         playsInline
+        preload="metadata"
+        poster="/images/video-placeholder.png"  // Add your lightweight poster image here
       >
         <source src="/videos/video.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className={styles.videoOverlay}></div> {/* Add this line */}
-      
+      <div className={styles.videoOverlay}></div>
+
       <Reveal direction="left">
         <div className={styles.textContent}>
           <div className={styles.heroTitle}>
-            <p>Bienvenue chez <br/>Auto Spa Detailing</p>
+            <p>Bienvenue chez <br />Auto Spa Detailing</p>
           </div>
           <div className={styles.heroDescription}>
             <p>
@@ -28,7 +30,6 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </Reveal>
-      
     </section>
   );
 };
