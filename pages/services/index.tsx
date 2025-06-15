@@ -169,6 +169,7 @@ const Services: React.FC = () => {
             <p>
               Chez Auto Spa Detailing Tanger, nous sommes spécialisés dans la pose professionnelle de films PPF de haute qualité, découpés sur mesure pour une finition parfaite.
             </p>
+            <Reveal direction='left'>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap' }}>
               <Image
                 src="/cars/ppf_image1.jpeg"
@@ -195,6 +196,7 @@ const Services: React.FC = () => {
                 }}
               />
             </div>
+            </Reveal>
           </div>
           </Reveal>
           <Reveal direction='right'>
