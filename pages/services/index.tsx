@@ -171,7 +171,7 @@ const Services: React.FC = () => {
             </p>
             <div style={{ marginTop: '24px', display: 'flex', justifyContent: 'center', gap: '24px', flexWrap: 'wrap' }}>
               <Image
-                src="/cars/ppf2.jpg"
+                src="/cars/ppf_image1.jpeg"
                 alt="Film PPF Auto Spa Tanger"
                 className={styles.responsiveImage}
                 width={350}
@@ -183,7 +183,7 @@ const Services: React.FC = () => {
                 }}
               />
               <Image
-                src="/cars/ppf3.jpg"
+                src="/cars/ppf_image2.jpeg"
                 alt="Film PPF Auto Spa Tanger"
                 className={styles.responsiveImage}
                 width={350}
