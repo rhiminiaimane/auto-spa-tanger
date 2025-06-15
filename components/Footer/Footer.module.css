@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Main Footer Layout */
+.footer {
+  background-color: #014AAC;
+  color: #ffffff;
+  padding: 2rem 2rem;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.contactIcon {
+  width: 36px;
+  height: 20px;
+}
+
+@media (max-width: 768px) {
+  .contactIcon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+
+.footerContainer {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* Section Cards */
+.card {
+  text-align: center;
+}
+
+/* Images and Media */
+.mapImage {
+  border-radius: 33px;
+  object-fit: cover;
+  width: 100%;
+  max-width: 300px;
+  height: 250px;  /* Added fixed height */
+  border: 1px solid #f8ad19;
+}
+
+.messageRapide {
+  border-radius: 33px;
+  border: 1px solid #f8ad19;
+  background-color: white;
+  color: black;
+  width: 100%;  /* Changed from max-width */
+  max-width: 300px;
+  height: 250px;  /* Changed from max-height */
+}
+
+.messageContent {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: calc(250px - 10px);  /* Adjusted to account for margins */
+  padding: 1rem;
+  box-sizing: border-box;  /* Added to include padding in height calculation */
+}
+
+.messageContent h3,
+.messageContent p {
+  margin: 0.5rem 0;
+}
+
+/* Titles */
+.sectionTitle,
+.centeredTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  width: 100%;
+  color: white;
+}
+
+/* Contact Section */
+
+.contactWrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 1rem;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  min-width: 220px;
+  margin-top: 35px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 0.5rem;
+  margin-bottom: 22px;
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.contactLink {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}
+
+/* WhatsApp Button */
+.whatsappBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsappBtn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Divider */
+.verticalDivider {
+  width: 1px;
+  background-color: #e0e0e0;
+  align-self: stretch;
+}
+
+@media (max-width: 768px) {
+  .contentWrapper,
+  .contactWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .verticalDivider {
+    display: none;
+  }
+
+  .mapImage,
+  .messageRapide {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .contactWrapper {
+    gap: 1rem;
+}
+
+}

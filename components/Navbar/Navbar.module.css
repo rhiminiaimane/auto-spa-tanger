@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0rem;
+  background-color: #f5f5f5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 3rem;
+}
+
+.scrolled {
+  padding: 1rem 2rem;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbarLogo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #f8ad19;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImage {
+  height: 55px;
+  width: auto;
+}
+
+.navbarLinks {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.navbarLinks a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 0.5rem 0;
+  cursor: pointer;
+}
+
+.navbarLinks a:hover {
+  color: #f8ad19;
+}
+
+.navbarLinks a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #f8ad19;
+  transition: width 0.3s ease;
+}
+
+.navbarLinks a:hover::after {
+  width: 0; /* Remove underline on hover */
+}
+
+.navbarHamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.navbarHamburger span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform-origin: left center;
+}
+
+.brandName {
+  display: flex;
+  align-items: center;
+}
+
+.mainBrand {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2rem; /* Adjust as needed */
+  color: #f8ad19;  /* Or your preferred color */
+  letter-spacing: 1px;
+}
+
+.subBrand {
+  white-space: nowrap;
+  color: black;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Hide 'Detailing' on mobile screens */
+@media screen and (max-width: 768px) {
+  .subBrand {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1.3rem;
+    
+  }
+
+  .navbarLogo {
+    flex: 1;
+    justify-content: flex-start;
+  }
+
+  .brandName {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .scrolled {
+    padding: 0.8rem 1.5rem;
+  }
+
+  .navbarLinks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transform: translateX(100%);
+    transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1000;
+  }
+
+  .navbarLinks.active {
+    transform: translateX(0);
+  }
+
+  .navbarLinks a {
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .navbarLinks a::after {
+    height: 3px;
+  }
+
+  .navbarHamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .navbarHamburger.active span:nth-child(1) {
+    transform: translateY(1px) rotate(45deg);
+    background-color: black;
+  }
+
+  .navbarHamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbarHamburger.active span:nth-child(3) {
+    transform: translateY(-1px) rotate(-45deg);
+    background-color: black;
+  }
+  .mainBrand{
+    font-weight: 700;
+    font-size: 1.7rem; /* Adjust as needed */
+  }
+}
+
+.light {
+  font-weight: normal;
+  color: #014AAC;
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* Main Container */
+.container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Video Background */
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Overlay for video */
+.videoOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.45); /* Adjust opacity as needed */
+  z-index: 0;
+}
+
+/* Text Content */
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  color: #fff;
+  text-shadow: 0 0 10px #000000c9;
+  z-index: 1;
+  text-align: center;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.heroDescription {
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+
+/* Color for strong elements in titles and descriptions */
+.heroTitle strong,
+.heroDescription strong {
+  color: #014AAC;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .textContent {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin-top: 2rem; /* Reduce or set to 0 if you want no gap */
+  }
+  .heroTitle {
+    font-size: 1.8rem;
+  }
+
+  .heroDescription {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 25px; /* Remove gap on very small screens */
+    min-height: 80vh;
+  }
+  .heroTitle {
+    font-size: 1.6rem;
+  }
+
+  .heroDescription {
+    font-size: 0.95rem;
+  }
+}
