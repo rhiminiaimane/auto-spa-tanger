@@ -11,27 +11,28 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
-        <title>Auto Spa Tanger | Traitement Céramique & PPF Haut de Gamme</title>
-        <meta name="description" content="Spécialiste du traitement céramique, protection PPF et auto spa à Tanger. Protégez votre véhicule avec nos solutions professionnelles. Garage certifié." />
-        <meta name="keywords" content="traitement céramique Tanger, nano ceramic Tanger, PPF Tanger, auto spa Tanger, protection peinture voiture, detailing auto Tanger, lavage premium Tanger" />
+        <title>Auto Spa Tanger | Protection Céramique, PPF & Detailing à Tanger</title>
+        <meta name="description" content="Auto Spa Tanger, spécialiste en traitement céramique, protection PPF et detailing auto à Tanger. Protégez et sublimez votre véhicule avec des services haut de gamme." />
+        <meta name="keywords" content="Auto Spa Tanger, protection céramique Tanger, PPF Tanger, detailing Tanger, traitement céramique voiture Tanger, protection peinture voiture Tanger, nano ceramic Tanger, lavage premium Tanger, detailing auto Tanger" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <meta name="author" content="Auto Spa Detailing Tanger" />
-        
-        {/* Local Business Schema */}
+        <meta name="author" content="Auto Spa Tanger" />
+        <link rel="canonical" href="https://autospatanger.com/" />
+
+        {/* Schema.org Local Business */}
         <script type="application/ld+json">
           {`
             {
               "@context": "https://schema.org",
-              "@type": "AutoDetailing",
-              "name": "Auto Spa Detailing Tanger",
-              "image": "https://autospatanger.com/logo.jpg",
+              "@type": "AutoRepair",
+              "name": "Auto Spa Tanger",
+              "image": "https://autospatanger.com/logo.jpeg",
               "@id": "https://autospatanger.com",
               "url": "https://autospatanger.com",
               "telephone": "+212662038056",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Dyar Tanja, Tanger",
+                "streetAddress": "Dyar Tanja",
                 "addressLocality": "Tanger",
                 "addressRegion": "Tanger-Tétouan-Al Hoceïma",
                 "postalCode": "90000",
@@ -39,8 +40,8 @@ const Home: React.FC = () => {
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "35.7608711",
-                "longitude": "-5.8518966"
+                "latitude": 35.7608711,
+                "longitude": -5.8518966
               },
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
@@ -64,22 +65,21 @@ const Home: React.FC = () => {
         </script>
 
         {/* Open Graph */}
-        <meta property="og:title" content="Auto Spa Tanger | Protection Céramique & PPF Professionnelle" />
-        <meta property="og:description" content="Spécialiste du traitement céramique et protection PPF à Tanger. Solutions professionnelles pour votre véhicule." />
+        <meta property="og:title" content="Auto Spa Tanger | Detailing, Protection Céramique & PPF à Tanger" />
+        <meta property="og:description" content="Experts en detailing automobile, traitement céramique et protection PPF à Tanger. Services professionnels pour protéger votre véhicule." />
         <meta property="og:url" content="https://autospatanger.com/" />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="fr_MA" />
-        <meta property="og:image" content="https://autospatanger.com/og-image.jpg" />
-        <meta property="og:site_name" content="Auto Spa Detailing Tanger" />
+        <meta property="og:image" content="https://autospatanger.com/share.jpg" />
+        <meta property="og:site_name" content="Auto Spa Tanger" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Auto Spa Tanger | Experts en Protection Automobile" />
-        <meta name="twitter:description" content="Traitement céramique, PPF et auto spa professionnel à Tanger" />
-        <meta name="twitter:image" content="https://autospatanger.com/twitter-image.jpg" />
+        <meta name="twitter:title" content="Auto Spa Tanger | Experts en Protection Automobile à Tanger" />
+        <meta name="twitter:description" content="Traitement céramique, protection PPF et detailing auto à Tanger." />
+        <meta name="twitter:image" content="https://autospatanger.com/share.jpg" />
         <meta name="twitter:site" content="@autospatanger" />
       </Head>
-      
       <div>
         <HeroSection />
         <AboutSection />

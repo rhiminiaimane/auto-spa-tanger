@@ -62,10 +62,38 @@ const Services: React.FC = () => {
     <>
     <Head>
         <title>Services Auto Spa Tanger | Traitement Céramique & PPF</title>
-        <meta name="description" content="Découvrez nos services de traitement céramique, nano ceramic, film de protection peinture (PPF) et auto spa à Tanger. Protection premium pour votre véhicule." />
-        <meta name="keywords" content="traitement céramique Tanger, nano ceramic Tanger, PPF Tanger, auto spa Tanger, protection peinture Tanger" />
+        <meta
+          name="description"
+          content="Découvrez nos services de traitement céramique, nano ceramic, film de protection peinture (PPF) et auto spa à Tanger. Protection premium pour votre véhicule."
+        />
+        <meta
+          name="keywords"
+          content="traitement céramique Tanger, nano ceramic Tanger, PPF Tanger, auto spa Tanger, protection peinture Tanger, detailing Tanger, lavage auto Tanger"
+        />
         <link rel="canonical" href="https://autospatanger.com/services" />
-    </Head>
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Services Auto Spa Tanger | Traitement Céramique & PPF" />
+        <meta
+          property="og:description"
+          content="Nos services premium à Tanger : traitement céramique, nano ceramic, film de protection peinture (PPF) et auto spa pour une protection optimale."
+        />
+        <meta property="og:url" content="https://autospatanger.com/services" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta property="og:image" content="https://autospatanger.com/share.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Services Auto Spa Tanger | Traitement Céramique & PPF" />
+        <meta
+          name="twitter:description"
+          content="Traitement céramique, PPF et auto spa professionnel à Tanger pour protéger et embellir votre véhicule."
+        />
+        <meta name="twitter:image" content="https://autospatanger.com/share.jpg" />
+        <meta name="twitter:site" content="@autospatanger" />
+      </Head>
+
     <div className={styles.pageContainer}>
       <div className={styles.buttonGroup}>
         <button

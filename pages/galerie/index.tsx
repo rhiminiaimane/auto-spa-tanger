@@ -130,12 +130,40 @@ const Galerie: React.FC = () => {
 
   return (
     <>
-          <Head>
+      <Head>
         <title>Galerie de Réalisations | Auto Spa Detailing Tanger</title>
-        <meta name="description" content="Découvrez les réalisations d'Auto Spa Detailing Tanger : nettoyage, polissage, traitement céramique et detailing sur des BMW, Mercedes, Porsche, Audi, et bien plus." />
-        <meta name="keywords" content="detailing Tanger, traitement céramique Tanger, lavage auto Tanger, nettoyage voiture Tanger, BMW detailing Tanger, Mercedes detailing Tanger, Porsche Tanger" />
+        <meta
+          name="description"
+          content="Découvrez les réalisations d'Auto Spa Detailing Tanger : nettoyage, polissage, traitement céramique, protection PPF et detailing sur BMW, Mercedes, Porsche, Audi, et bien plus."
+        />
+        <meta
+          name="keywords"
+          content="detailing Tanger, traitement céramique Tanger, protection céramique Tanger, PPF Tanger, lavage auto Tanger, nettoyage voiture Tanger, BMW detailing Tanger, Mercedes detailing Tanger, Porsche Tanger"
+        />
         <link rel="canonical" href="https://autospatanger.com/galerie" />
+
+        {/* Open Graph */}
+        <meta property="og:title" content="Galerie de Réalisations | Auto Spa Detailing Tanger" />
+        <meta
+          property="og:description"
+          content="Découvrez les réalisations de traitement céramique, protection PPF et detailing automobile par Auto Spa Detailing Tanger."
+        />
+        <meta property="og:url" content="https://autospatanger.com/galerie" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="fr_MA" />
+        <meta property="og:image" content="https://autospatanger.com/share.jpg" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Galerie de Réalisations | Auto Spa Detailing Tanger" />
+        <meta
+          name="twitter:description"
+          content="Polissage, nettoyage, traitement céramique et protection PPF réalisés par Auto Spa Detailing Tanger."
+        />
+        <meta name="twitter:image" content="https://autospatanger.com/share.jpg" />
+        <meta name="twitter:site" content="@autospatanger" />
       </Head>
+
     <div className={styles.container}>
       <div className={styles.gallery}>
       <div 
