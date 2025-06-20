@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
         <Reveal direction="left">
           <div className={styles.aboutImage}>
             <Image
-              src="/IMG1.jpg" // Change this path if your image is elsewhere
+              src="/garage.jpg" // Change this path if your image is elsewhere
               alt="Auto Spa Detailing"
               width={400}
               height={350}
