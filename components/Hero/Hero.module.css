@@ -37,6 +37,18 @@
   z-index: 0;
 }
 
+/* Video Placeholder Image (displayed until video starts) */
+.videoPlaceholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2; /* below video background */
+  transition: opacity 0.5s ease-in-out;
+}
+
 /* Text Content */
 .textContent {
   display: flex;
