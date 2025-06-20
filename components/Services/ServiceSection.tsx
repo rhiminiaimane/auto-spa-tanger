@@ -8,12 +8,12 @@ const services = [
     {
         title: 'Protection Nano Céramique',
         description: 'Protection longue durée contre les rayons UV, la pluie acide, la pollution et plus encore. Finition ultra brillante et protection jusqu’à 5 ans.',
-        imageUrl: '/cars/ceramic-protect-9h2.jpg',
+        imageUrl: '/cars/ceramic-protect-9h.jpg',
     },
     {
         title: 'Film de protection de peinture',
         description: 'Préservez votre peinture contre les éclats de pierre, rayures et agressions extérieures avec un film invisible et ultra résistant.',
-        imageUrl: '/cars/ppf2.jpg',
+        imageUrl: '/cars/Film_de_protection_de_peinture.jpg',
     },
 ];
 
