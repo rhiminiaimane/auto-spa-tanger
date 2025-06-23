@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
     <section className={styles.container}>
       {!videoStarted && (
         <img
-          src="/images/video-placeholder.png"
+          src="/video-placeholder.jpg"
           alt="Video placeholder"
           className={styles.videoPlaceholder}
         />
