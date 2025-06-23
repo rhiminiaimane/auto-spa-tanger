@@ -43,7 +43,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className={`${styles.navbar} ${isScrolled ? styles.scrolled : ''}`}>
-      <div className={styles.navbarLogo}>
+      <Link href="/" onClick={() => {
+        if (router.pathname === '/') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        setIsOpen(false);
+      }} className={styles.navbarLogo} style={{ cursor: 'pointer' }}>
         <Image 
           src="/logos/logo1.png" 
           alt="AutoSpa Logo" 
@@ -54,11 +59,9 @@ const Navbar: React.FC = () => {
         />
         <span className={styles.brandName}>
           <span className={styles.mainBrand}>Masters Of Detailing</span> 
-          {/*
-          <span className={styles.subBrand}></span>
-          */}
+          {/* <span className={styles.subBrand}></span> */}
         </span>
-      </div>
+      </Link>
       
       <div className={`${styles.navbarLinks} ${isOpen ? styles.active : ''}`}>
         <Link href="/" onClick={() => {
