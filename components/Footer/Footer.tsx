@@ -82,7 +82,7 @@ const Footer: React.FC<FooterProps> = ({ id }) => {
                     <h3>Contact Rapide</h3>
                     <p>Message direct sur WhatsApp</p>  
                     <a 
-                        href={`https://wa.me/+212639607843?text=${encodeURIComponent(
+                        href={`https://wa.me/+212662038056?text=${encodeURIComponent(
                             "Bonjour Auto Spa Detailing, je souhaite prendre rendez-vous."
                         )}`} 
                         className={styles.whatsappBtn}
